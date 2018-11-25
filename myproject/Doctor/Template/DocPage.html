@@ -34,35 +34,59 @@
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.email == "hello@yahoo.com"%}
+		{% for result in results if not result.email == "doctor@gmail.com"%}
     		<td>{{ result.email }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.age == "14"%}
+		{% for result in results if not result.age == "xx"%}
     		<td>{{ result.age }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.height == "175"%}
+		{% for result in results if not result.gender == "xxxx"%}
+    		<td>{{ result.gender }}</td>
+		{% endfor %}
+		</tr>
+		<tr>
+		{% for result in results if not result.phone == "xxxxxxxxxx"%}
+    		<td>{{ result.phone }}</td>
+		{% endfor %}
+		</tr>
+		<tr>
+		{% for result in results if not result.height == "xxx"%}
     		<td>{{ result.height }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.weight == "69"%}
+		{% for result in results if not result.weight == "xx"%}
     		<td>{{ result.weight }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.address == "India"%}
+		{% for result in results if not result.address == "xxx"%}
     		<td>{{ result.address }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results if not result.bloodgroup == ""%}
+		{% for result in results if not result.bloodgroup == "xxx"%}
     		<td>{{ result.bloodgroup }}</td>
 		{% endfor %}
 		<tr>
+		{% for result in results if not result.familyhistory == "xxx"%}
+    		<td>{{ result.familyhistory }}</td>
+		{% endfor %}
+		</tr>
+		<tr>
+		{% for result in results if not result.allergies == "xxx"%}
+    		<td>{{ result.allergies }}</td>
+		{% endfor %}	
+		</tr>
+		<tr>
+		{% for result in results if not result.currentmedication == "xxx"%}
+    		<td>{{ result.currentmedication }}</td>
+		{% endfor %}		
+		</tr>	
 	</table>
 	</div>
 	</body> 

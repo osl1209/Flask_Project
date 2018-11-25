@@ -29,37 +29,37 @@
     <div>
     	<table  style="width:100%">
     	<tr>
-    	{% for result in results %}
+    	{% for result in results if not result.username == "doctor_user" %}
     		<td>{{ result.username }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.email == "hello@yahoo.com"%}
     		<td>{{ result.email }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.age == "14"%}
     		<td>{{ result.age }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.height == "175"%}
     		<td>{{ result.height }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.weight == "69"%}
     		<td>{{ result.weight }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.address == "India"%}
     		<td>{{ result.address }}</td>
 		{% endfor %}
 		</tr>
 		<tr>
-		{% for result in results %}
+		{% for result in results if not result.bloodgroup == ""%}
     		<td>{{ result.bloodgroup }}</td>
 		{% endfor %}
 		<tr>

@@ -1,4 +1,36 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1 style = "color:floralwhite">About Page</h1>
+	<style>
+	table, th, td {
+    	border: 1px solid black;
+		border-collapse: collapse;
+	}
+	th,td {
+		padding: 25px;
+	}
+	table{
+		border-spacing: 15px;
+	}
+	table td:nth-child(even) {
+	    background-color: #eee;
+	}
+	table td:nth-child(odd) {
+	   background-color: #fff;
+	}
+	table th {
+	    background-color: black;
+	    color: white;
+	}
+	</style>
+    <table style ="width:100%">
+    <td>	
+    <h1>About Page</h1>
+    <div>
+	    <p><h3>Our project can be used as a Database for storing medical information that can be accessed by a
+	medical-professional.Our project enables the user to enter and store his/her medical information as well
+	as contact information, which can later be accessed by that user again.</h3></p>
+	</div>
+	<td>
+</table>
 {% endblock content %}
+

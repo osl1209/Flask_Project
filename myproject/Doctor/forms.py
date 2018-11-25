@@ -18,6 +18,9 @@ class RegistrationForm(FlaskForm):
     height = StringField('Height',validators=[DataRequired(),Length(min =2,max=3)])
     weight = StringField('Weight',validators=[DataRequired()])
     bloodgroup = StringField('BloodGroup', validators = [DataRequired()])
+    familyhistory= TextField('Family History')
+    allergies= TextField('Allergies')
+    currentmedication= TextField('Any Current Medication')
     submit = SubmitField('Sign Up')
   
     def validate_phone(form, phone):

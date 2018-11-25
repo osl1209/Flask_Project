@@ -158,6 +158,48 @@
                 {{ form.bloodgroup }}
                 {% endif %}
             </div>
+            <div>
+                <strong style = "color:floralwhite">{{ form.familyhistory.label }}</strong>
+                <br>
+                {% if form.familyhistory.errors %}
+                {{ form.familyhistory }}
+                <div>
+                    {% for error in form.familyhistory.errors %}
+                    <span style="color:#EE6309"><em>{{error}}</em></span>
+                    {% endfor %}
+                </div>
+                {%else%}
+                {{ form.familyhistory }}
+                {% endif %}
+            </div>
+            <div>
+                <strong style = "color:floralwhite">{{ form.allergies.label }}</strong>
+                <br>
+                {% if form.allergies.errors %}
+                {{ form.allergies }}
+                <div>
+                    {% for error in form.allergies.errors %}
+                    <span style="color:#EE6309"><em>{{error}}</em></span>
+                    {% endfor %}
+                </div>
+                {%else%}
+                {{ form.allergies }}
+                {% endif %}
+            </div>
+            <div>
+                <strong style = "color:floralwhite">{{ form.currentmedication.label }}</strong>
+                <br>
+                {% if form.currentmedication.errors %}
+                {{ form.currentmedication }}
+                <div>
+                    {% for error in form.currentmedication.errors %}
+                    <span style="color:#EE6309"><em>{{error}}</em></span>
+                    {% endfor %}
+                </div>
+                {%else%}
+                {{ form.currentmedication }}
+                {% endif %}
+            </div>
 
         </fieldset>
         <div>

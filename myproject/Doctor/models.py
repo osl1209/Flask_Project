@@ -17,6 +17,9 @@ class User(db.Model, UserMixin):
     height = db.Column(db.String(3), nullable = False)
     weight = db.Column(db.String(20), nullable = False)
     bloodgroup = db.Column(db.String(7), nullable = False)
+    familyhistory = db.Column(db.String(120), nullable = False)
+    allergies = db.Column(db.String(120), nullable = False)
+    currentmedication = db.Column(db.String(120), nullable = False)
 
     def __repr__(self):
         return f"User('{self.username}', '{self.email}','{self.age}', '{self.gender}','{self.phone}', '{self.address}')"
